@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Form</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <!-- Header section -->
+        <header>
+            <h2>Add Product </h2>
+        </header>
+
+        <!-- Product Form Started -->
+        <section>
+            <div class="formDiv">
+                <form action="" method="POST">
+                    
+                    <label for="productName">Product Name</label><br>
+                    <input type="text" id="productName" name="productName" maxlength="50" minlength="5" required>
+            
+                    <label for="productDescription">Product Description</label><br>
+                    <textarea name="productDescription" id="productDescription" cols="30" rows="10" maxlength="200" minlength="25" required></textarea>
+                    
+                    <label for="supportEmail">Support Email</label><br>
+                    <input type="email" id="supportEmail" name="supportEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                    <label for="SellerContact">Seller Contact </label><br>
+                    <input type="email" id="SellerContact" name="SellerContact" value="seller@gmail.com" disabled>
+    
+                    <label for="launchDate">Launch Date</label><br>
+                    <input type="date" id="launchDate" name="launchDate" min="2021-05-31" required>
+    
+                        
+                    <legend>Product colors</legend>      
+                    <input type="checkbox" name="productColor" value="Red" checked>Red      
+                    <input type="checkbox" name="productColor" value="Green">Green      
+                    <input type="checkbox" name="productColor" value="Blue">Blue <br><br>   
+    
+                    <label for="Size">Choose Size:</label>
+                    <select name="productSize" id="Size" required>
+                        <option value="SM">SM</option>
+                        <option value="MD">MD</option>
+                        <option value="LG">LG</option>
+                        <option value="XL">XL</option>
+                    </select>
+    
+                    <label for="image">Select a file:</label>
+                    <input type="file" id="image" name="productImage" accept="image/*" required>
+    
+                    
+                    <legend>In-Stock </legend>  
+                    <div class="dis-in"><input type="radio" value="Yes" name="InStock" checked>Yes</div>
+                    <div class="dis-in"><input type="radio" value="No" name="InStock">No</div> 
+                    
+                    <div>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                    
+                </form> 
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer>
+            <h5>Copyright by me</h5>
+        </footer>
+    </body>
+</html>

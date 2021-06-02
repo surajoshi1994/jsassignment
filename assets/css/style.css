@@ -1,0 +1,47 @@
+header, footer{
+    background-color: #e8e5e5;
+    padding: 5px;
+    text-align: center;
+}
+.formDiv{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], input[type=email], input[type=date], input[type=file], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+fieldset {
+    border: 0;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.product-card{
+    border: 1px solid #000000;
+}
+
+.product-card > img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card > h1{
+    width: 100%;
+}
+.product-deatils{
+    padding: 10px;
+    text-align: center;
+}
+

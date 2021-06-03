@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Product Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
@@ -14,7 +15,11 @@
         <!-- Product Form Started -->
         <section>
             <div class="formDiv">
-                <form action="" method="POST">
+                <form action="" method="POST" id="productForm">
+
+                    <div class="alert alert-danger error" style="display: none;">
+                        <strong>ERROR!</strong> you can not select pervious date.
+                    </div>
                     
                     <label for="productName">Product Name</label><br>
                     <input type="text" id="productName" name="productName" maxlength="50" minlength="5" required>
@@ -29,7 +34,7 @@
                     <input type="email" id="SellerContact" name="SellerContact" value="seller@gmail.com" disabled>
     
                     <label for="launchDate">Launch Date</label><br>
-                    <input type="date" id="launchDate" name="launchDate" min="2021-05-31" required>
+                    <input type="date" id="launchDate" name="launchDate" required>
     
                         
                     <legend>Product colors</legend>      
@@ -66,5 +71,9 @@
         <footer>
             <h5>Copyright by me</h5>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./assets/js/validate.js"></script>
     </body>
 </html>
